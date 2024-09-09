@@ -109,7 +109,7 @@ function TextDropdown(props: IPropsTextDropdown) {
           <ChevronDown className="richtext-w-4 richtext-h-4" />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent hideWhenDetached className="richtext-w-full richtext-p-1" align="start" sideOffset={5}>
+      <DropdownMenuContent hideWhenDetached className="richtext-w-full richtext-p-1 richtext-z-[99999]" align="start" sideOffset={5}>
         {menus.map((item, index) => {
           const Icon = icons[item.iconName as any]
 

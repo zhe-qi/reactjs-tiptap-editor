@@ -229,7 +229,7 @@ function ContentMenu(props: ContentMenuProps) {
             <DropdownMenuTrigger className="richtext-absolute richtext-top-0 richtext-left-0 richtext-w-[28px] richtext-h-[28px] richtext-z-0" />
           </div>
 
-          <DropdownMenuContent className="richtext-w-48" align="start" side="bottom" sideOffset={0}>
+          <DropdownMenuContent className="richtext-w-48 richtext-z-[99999]" align="start" side="bottom" sideOffset={0}>
             <DropdownMenuItem
               onClick={deleteNode}
               className="richtext-flex richtext-gap-3 focus:richtext-text-red-500 focus:richtext-bg-red-400 hover:richtext-bg-red-400 dark:hover:richtext-text-red-500 richtext-bg-opacity-10 hover:richtext-bg-opacity-20 focus:richtext-bg-opacity-30 dark:hover:richtext-bg-opacity-20"

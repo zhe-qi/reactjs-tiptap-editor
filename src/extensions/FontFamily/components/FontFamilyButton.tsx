@@ -66,7 +66,7 @@ function FontFamilyButton(props: Props) {
           icon="MenuDown"
         />
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="richtext-w-full">
+      <DropdownMenuContent className="richtext-w-full richtext-z-[99999]">
         {props?.items?.map((item: any, index) => {
           const style
             = item.font === t('editor.fontFamily.default.tooltip') ? {} : { fontFamily: item.font }

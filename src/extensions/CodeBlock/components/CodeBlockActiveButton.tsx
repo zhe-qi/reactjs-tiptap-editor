@@ -49,7 +49,7 @@ function CodeBlockActiveButton({ action, languages, ...props }: Props) {
           icon={props?.icon}
         />
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="richtext-w-full">
+      <DropdownMenuContent className="richtext-w-full richtext-z-[99999]">
         {langs?.map((item: any) => {
           return (
             <DropdownMenuItem key={`codeblock-${item.title}`} onClick={() => onClick(item.language)}>

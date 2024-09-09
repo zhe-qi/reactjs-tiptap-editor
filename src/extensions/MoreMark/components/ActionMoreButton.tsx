@@ -64,7 +64,7 @@ function ActionMoreButton(props: IPropsActionMoreButton) {
           <MenuDown className="richtext-w-3 richtext-h-3 richtext-text-gray-500" />
         </ActionButton>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-full">
+      <DropdownMenuContent className="w-full richtext-z-[99999]">
         {props?.items?.map((item: any, index) => {
           return (
             <DropdownMenuCheckboxItem
