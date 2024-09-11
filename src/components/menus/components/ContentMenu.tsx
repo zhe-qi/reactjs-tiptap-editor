@@ -115,7 +115,8 @@ function ContentMenu(props: ContentMenuProps) {
     setCurrentNodePos(e.pos)
   }
 
-  function handleAdd() {
+  function handleAdd(e: any) {
+    e.preventDefault()
     if (currentNodePos !== -1) {
       const currentNodeSize = currentNode?.nodeSize || 0
       const insertPos = currentNodePos + currentNodeSize
@@ -209,6 +210,9 @@ function ContentMenu(props: ContentMenuProps) {
                 <Button
                   variant="ghost"
                   size="icon"
+                  onClick={(e: any) => {
+                    e.preventDefault()
+                  }}
                   className="richtext-w-7 richtext-h-7 richtext-cursor-grab richtext-relative richtext-z-[1]"
                   disabled={props?.disabled}
                   onMouseUp={() => {

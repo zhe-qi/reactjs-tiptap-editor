@@ -22,7 +22,8 @@ export function BubbleMenuIframe({ editor }: any) {
   const [visible, toggleVisible] = useState(false)
   const [formUrl, setFormUrl] = useState('')
 
-  const handleCancel = useCallback(() => {
+  const handleCancel = useCallback((e: any) => {
+    e.preventDefault()
     toggleVisible(false)
   }, [toggleVisible])
 
@@ -31,7 +32,8 @@ export function BubbleMenuIframe({ editor }: any) {
       setFormUrl(url as any)
   }, [visible, url])
 
-  const handleOk = useCallback(() => {
+  const handleOk = useCallback((e: any) => {
+    e.preventDefault()
     editor
       .chain()
       .updateAttributes(Iframe.name, {

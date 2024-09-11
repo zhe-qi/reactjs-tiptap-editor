@@ -61,7 +61,7 @@ function TextAlignMenuButton(props: IPropsTextAlignMenuButton) {
       </PopoverTrigger>
 
       <PopoverContent
-        className="richtext-min-w-4 richtext-w-full !richtext-p-[4px] richtext-flex richtext-flex-row richtext-gap-1"
+        className="richtext-min-w-4 richtext-w-full !richtext-p-[4px] richtext-flex richtext-flex-row richtext-gap-1 richtext-z-[99999]"
         align="start"
         side="bottom"
       >

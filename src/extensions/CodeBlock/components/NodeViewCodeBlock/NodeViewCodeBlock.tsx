@@ -39,7 +39,7 @@ export function NodeViewCodeBlock({ editor, node: { attrs }, updateAttributes, e
           <SelectTrigger>
             <SelectValue placeholder="Language" />
           </SelectTrigger>
-          <SelectContent>
+          <SelectContent className="richtext-z-[99999]">
             <SelectItem value="auto">Auto</SelectItem>
 
             {listLang.map((lang: any, index: any) => (

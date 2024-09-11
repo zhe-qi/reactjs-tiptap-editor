@@ -77,7 +77,7 @@ function ColorPicker(props: ColorPickerProps) {
     <Popover>
       <PopoverTrigger className="!richtext-p-0" disabled={disabled} asChild>{props?.children}</PopoverTrigger>
 
-      <PopoverContent hideWhenDetached className="richtext-w-full richtext-h-full richtext-p-2" align="start" side="bottom">
+      <PopoverContent hideWhenDetached className="richtext-w-full richtext-h-full richtext-p-2 richtext-z-[99999]" align="start" side="bottom">
         <div className="richtext-flex richtext-flex-col">
           {highlight
             ? (

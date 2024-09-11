@@ -24,7 +24,8 @@ function BubbleMenuKatex({ editor, ...props }: any) {
 
   const deleteMe = useCallback(() => deleteNode(Katex.name, editor), [editor])
 
-  const submit = useCallback(() => {
+  const submit = useCallback((e: any) => {
+    e.preventDefault()
     editor.chain().focus().setKatex({ text: currentValue }).run()
     toggleVisible(false)
   }, [editor, currentValue])
