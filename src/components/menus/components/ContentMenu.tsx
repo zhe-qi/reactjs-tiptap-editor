@@ -274,7 +274,7 @@ function ContentMenu(props: ContentMenuProps) {
                       <span>{t('editor.textalign.tooltip')}</span>
                     </DropdownMenuSubTrigger>
                     <DropdownMenuPortal>
-                      <DropdownMenuSubContent>
+                      <DropdownMenuSubContent className="richtext-z-[99999]">
                         <DropdownMenuItem className="richtext-flex richtext-gap-3" onClick={() => setTextAlign('left')}>
                           <IconComponent name="AlignLeft" />
                           <span>{t('editor.textalign.left.tooltip')}</span>
@@ -301,7 +301,7 @@ function ContentMenu(props: ContentMenuProps) {
                       <span>{t('editor.indent')}</span>
                     </DropdownMenuSubTrigger>
                     <DropdownMenuPortal>
-                      <DropdownMenuSubContent>
+                      <DropdownMenuSubContent className="richtext-z-[99999]">
                         <DropdownMenuItem
                           className="richtext-flex richtext-gap-3"
                           onClick={increaseIndent}
